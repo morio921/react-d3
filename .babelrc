@@ -1,0 +1,17 @@
+{
+  "env": {
+    "production": {
+      "presets": ["es2015", "react"],
+      "plugins": ["transform-class-properties", "transform-es2015-destructuring", "transform-object-rest-spread", "add-module-exports"]
+    },
+    "test": {
+      "presets": ["es2015", "react"],
+      "plugins": ["transform-class-properties", "transform-es2015-destructuring", "transform-object-rest-spread", "add-module-exports"]
+    },
+    // only enable it when process.env.NODE_ENV is 'development' or undefined
+    "development": {
+      "presets": ["es2015", "react"],
+      "plugins": ["transform-class-properties", "transform-es2015-destructuring", "transform-object-rest-spread", "add-module-exports", "react-hot-loader/babel"]
+    }
+  }
+}
